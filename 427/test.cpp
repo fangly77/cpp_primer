@@ -9,7 +9,7 @@ int main()
     Foo2 *ptr_foo2 = &foo2;
 
     {
-        std::shared_ptr<Foo> ptr_foo = std::make_shared<Foo>(foo2, 1);
+        std::shared_ptr<Foo> ptr_foo = std::make_shared<Foo>(&foo2, 1);
         ptr_foo->print();
     }
 
