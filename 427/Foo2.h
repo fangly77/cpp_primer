@@ -5,7 +5,7 @@ class Foo2
 {
 public:
     Foo2(const std::vector<int> &v) : v(v) {}
-    void print()
+    void print() const
     {
         for (size_t vv : v)
         {
